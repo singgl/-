@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "action-index": "../action-sheet/index"
+  }
+}

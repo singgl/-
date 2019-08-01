@@ -1,0 +1,121 @@
+@import "../../../../utils/icon.wxss";
+
+
+.m_detail{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  transform:translate3d(0,100%,0);
+  transform-origin:center;
+  transition:all .2s ease-in-out;
+  visibility:hidden;
+}
+.is-ok{
+  transform:translate3d(0,0,0);
+  visibility:visible;
+}
+
+.m_top{
+  height: 150rpx;
+  font-size: 36rpx;
+  color: #1296db;
+  margin-top: 20rpx;
+}
+.m_top>.m_title{
+  position: relative;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.m_top>.m_title>.icon-jiantouxia{
+  font-size: 40rpx;
+  position: absolute;
+  left: 50rpx;
+}
+.m_top>.m_title>text{
+  width: 400rpx;
+  display: inline-block;
+  font-size: 50rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.m_top>.m_name{
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.m_conten{
+  
+}
+.m_conten>.m_head{
+  width: 500rpx;
+  height: 500rpx;
+  margin: 100rpx auto 0;
+}
+.m_conten>.m_head>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.m_conten>.m_lic{
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 40rpx;
+  color: #1296db;
+}
+
+.m_footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #1296db;
+  color: #fff;
+  display: flex;
+}
+.m_footer>.m_left{
+  width: 120rpx;
+  text-align: center;
+}
+.m_footer>.m_left>.love{
+  font-size: 60rpx;
+}
+.m_footer>.m_center{
+  text-align: center;
+  width: 510rpx;
+  display: flex;
+}
+.m_footer>.m_center>.left{
+  width: 190rpx;
+  text-align: right;
+}
+.m_footer>.m_center>.cen{
+  width: 130rpx;
+}
+.m_footer>.m_center>.right{
+  width: 190rpx;
+  text-align: left;
+}
+.m_footer>.m_center>.cen>.play{
+  font-size: 70rpx;
+}
+.m_footer>.m_center>.left>.next,
+.m_footer>.m_center>.right>.next{
+  font-size: 50rpx;
+}
+.m_footer>.m_right{
+  width: 120rpx;
+  text-align: center;
+}
+.icon-yinle1{
+  font-size: 60rpx;
+}

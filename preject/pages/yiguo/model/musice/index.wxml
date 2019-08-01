@@ -1,0 +1,65 @@
+<view>
+  <view class='top'>
+    <input value='{{name}}' placeholder="输入搜索的歌曲名" bindblur="eventTap" bindinput="eventTap" placeholder-class="input-placeholder"></input>
+    <text catchtap='seacher'>搜索</text>
+  </view>
+
+  <view class='menu'>
+    <ul>
+      <li wx:for="{{menulist}}" wx:key="" id="{{item.id}}" catchtap="detaile">
+        <text>{{item.name}}</text>
+        <text wx:if="{{item.id == 1 && count > 0}}" class='count'>({{count}})</text>
+      </li>
+    </ul>
+  </view>
+
+  <view class='footer'>
+    <view class='footer_left' catchtap='detailTap'>
+      <image src='{{play.pic}}'></image>
+      <view class='title'>
+        <text>{{play.title}}</text>
+        <text>{{play.author}}</text>
+      </view>
+    </view>
+    <icon class='iconfont {{show ? "icon-zanting":"icon-bofang"}}' catchtap='play'></icon>
+    <icon class='iconfont icon-menu' catchtap='menutap'></icon>
+  </view>
+</view>
+
+<!-- 搜索歌曲显示列表 -->
+<view class='seacherlist' wx:if="{{pane}}">
+  <ul>
+    <li wx:for="{{paneList}}" wx:key="" data-item="{{item}}" catchtap="playSong">
+      <icon class='iconfont icon-search'></icon>
+      <text>{{item.author}}</text>
+    </li>
+  </ul>
+</view>
+
+<!-- 歌曲详情 -->
+<musice-detail id="detail" showDetail="{{showDetail}}" bindcloseInvoice="closeInvoice" bind:updata="updata"></musice-detail>
+
+<!-- 歌曲列表 -->
+<block>
+  <view class='mask {{showList ? "show" : ""}}' catchtap='clocseMap'></view>
+
+  <view class='content {{showList ? "shows" : ""}}'>
+    <view class='top'>
+      <text></text>
+      <icon class='iconfont icon-xiazaidaoru'></icon>
+      <icon class='iconfont icon-addition'></icon>
+      <icon class='iconfont icon-trash'></icon>
+    </view>
+    
+    <view class='main'>
+      <ul>
+        <li wx:for="{{list}}" wx:key="" catchtap="Plsy" data-id="{{item.songid}}">
+          <text>{{item.title}}</text>
+          <icon class='iconfont icon-trash' catchtap='Delete'></icon>
+        </li>
+      </ul>
+    </view>
+
+    <view class='futer' catchtap='clocseMap'>关闭</view>
+  </view>
+</block>

@@ -1,0 +1,23 @@
+<view>
+  <view class='seacher'>
+    <input value='{{value}}' bindblur="changeValue" placeholder="搜索"></input>
+    <icon class='iconfont icon-sousuo1 icon' catchtap='seacher'></icon>
+  </view>
+
+  <view class='history'>
+    <view class='title'>历史记录</view>
+
+    <view class='record' wx:if="{{show}}">
+      <ul>
+        <li wx:for="{{historyList}}" wx:key="" catchtap="copy" data-value="{{item.value}}">{{item.value}}</li>
+      </ul>
+
+      <view class='clear' >
+        <text catchtap='eventClear'>清除历史记录</text>
+      </view>
+    </view>
+    <view class='records' wx:else>
+      暂无历史记录
+    </view>
+  </view>
+</view>

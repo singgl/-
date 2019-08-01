@@ -1,0 +1,88 @@
+<view class='demo'>
+  <ul>
+    <li>fileList 商品信息</li>
+    <li>imglist 图片列表</li>
+    <li>menuList 菜单列表</li>
+    <li>swiperlist 轮播信息</li>
+  </ul>
+</view>
+
+
+<view class='goodsList'>
+  <view class='goodsTitle'>商品列表添加</view>
+
+  <view class='goodsConten'>
+    <view class='goodsImg' catchtap='AddImg'>
+      <image src='{{goodsSrc}}'></image>
+    </view>
+
+    <view class='goodsLi'>
+      <ul>
+        <li>
+          <text>价格</text>
+          <input placeholder="请输入" value='{{price}}' type='digit' bindblur="eventPriect"/>
+        </li>
+        <li>
+          <text>数量</text>
+          <input placeholder="请输入" value='{{numbers}}' type='number' bindblur="eventNum"/>
+        </li>
+        <li>
+          <text>参数</text>
+          <input placeholder="请输入" value='{{detail}}' type='text' bindblur="eventDel"/>
+        </li>
+        <li>
+          <text>类别</text>
+          <input placeholder="请输入" value='{{name}}' type='text' bindblur="eventName"/>
+        </li>
+      </ul>
+    </view>
+
+    <view class='goodsAdd' catchtap='Add'>添加</view>
+  </view>
+</view>
+
+<view class='AddList'>
+  <view class='goodsTitle'>商品图片资源</view>
+
+  <view class='srclist'>
+    <ul>
+      <li wx:for="{{imgList}}" wx:key="">
+        <image src='{{item.filePath}}'></image>
+      </li>
+    </ul>
+  </view>
+
+  <view class='upLoad' catchtap='upLoad'>上传图片</view>
+  <view class='upLoad' catchtap='submin'>提交</view>
+</view>
+
+<view class='urlList'>
+  <view class='goodsTitle'>商品图片url</view>
+
+  <view class='urlCont'>
+    <text>URL</text>
+    <input placeholder="请输入url" value='{{url}}' type='text' bindblur="eventUrl"></input>
+  </view>
+  <view class='urlCont'>
+    <text>图片分类</text>
+    <input placeholder="请输入图片分类名" value='{{urlName}}' type='text' bindblur="eventUrlName"></input>
+  </view>
+
+  <view class='upLoad' catchtap='addline'>添加url</view>
+</view>
+
+<view class='menu'>
+  <view class='goodsTitle'>菜单管理</view>
+
+  <view class='menuCont'>
+    <view class='menuicon' catchtap='addIcon'>
+      <image src="{{menuIcon}}"></image>
+    </view>
+    <view class='menu-input'>
+      <text>菜单名称</text>
+      <input placeholder="请输入" value='{{menuName}}' type='text' bindblur="eventMenu"></input>
+    </view>
+  </view>
+
+  <view class='upLoad' catchtap='addMenu'>添加菜单</view>
+</view>

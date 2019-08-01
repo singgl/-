@@ -1,0 +1,42 @@
+<!--index.wxml 自定义swiper面板原点-->
+<scroll-view class="container" scroll-y="true"  scroll-top="{{scrollTop}}" bindscroll="scroll">
+  <view class='tops'>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box" id="top" circular="{{autoplay}}"  current="{{swiperCurrent}}" bindchange="swiperChange">
+      <block wx:for="{{banner_list}}" wx:key="">
+        <swiper-item>
+          <image class="slide-img" src="{{item.fileID}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class='broadcast'>
+      <block wx:for="{{banner_list}}" wx:key="">
+        <view class="riduo{{index==swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+
+  <view class='partition'></view>
+  
+  <view class="banner-swiper">    
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" current='{{swiperIn}}' circular='{{circular}}' previous-margin="{{previousmargin}}" next-margin="{{nextmargin}}" bindchange="swiperChanges">       
+      <block wx:for="{{banner_list}}" wx:key="" wx:index="{{index}}">           
+        <swiper-item>            
+          <image src="{{item.fileID}}" class="slide-image {{swiperIn == index ? ' actives' : ''}}" id="{{index}}"></image>          
+        </swiper-item>      
+      </block>     
+    </swiper>  
+  </view>
+  <view class='partition'></view>
+</scroll-view>
+
+<!-- 遮罩广告 -->
+<!-- <view class='mask'wx:if="{{show}}">
+  <view class='bt_mask'></view>
+  <view class='m_conten'>
+    <image src="http://img13.yiguoimg.com/e/ad/2016/160914/585749449480315182_800x400.jpg"></image>
+  </view>
+
+  <icon class="carts-del" type="clear" size="20" color="#fff"  bindtap="bindCartsDel" />
+</view> -->

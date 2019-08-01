@@ -1,0 +1,23 @@
+.main{
+
+}
+.main>.menu{
+
+}
+.main>.menu>ul{
+  
+}
+.main>.menu>ul>li{
+  width: 250rpx;
+  height: 250rpx;
+  background: #fff;
+  border: 1rpx solid #eee;
+  box-sizing: border-box;
+  float: left;
+  border-top: 0;
+  border-right: 0;
+  font-size: 30rpx;
+  text-align: center;
+  color: #999;
+  line-height: 250rpx;
+}

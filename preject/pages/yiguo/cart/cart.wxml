@@ -1,0 +1,9 @@
+<view class='main'>
+  <view class='menu'>
+    <ul>
+      <li wx:for="{{menuList}}" wx:key="" data-name="{{item.name}}" id="{{item.id}}" catchtap="Jump">{{item.name}}</li>
+      <li>添加模块</li>
+    </ul>
+  </view>
+</view>
+

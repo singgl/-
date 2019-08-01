@@ -1,0 +1,8 @@
+{
+    "enablePullDownRefresh": false,
+    "navigationBarTitleText": "我的",
+    "usingComponents": {
+      "wxc-toast": "../../../dist/packages/@minui/wxc-toast/dist/index",
+      "wxc-notice": "../../../dist/packages/@minui/wxc-notice/dist/index"
+    }
+}

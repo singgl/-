@@ -1,0 +1,157 @@
+{
+	"description": "项目配置文件。",
+	"miniprogramRoot": "preject/",
+	"cloudfunctionRoot": "CloudService/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"appid": "wxe44775f71378af60",
+	"projectname": "%E5%95%86%E5%9F%8Edemo",
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 18,
+			"list": [
+				{
+					"id": 0,
+					"name": "搜索",
+					"pathName": "pages/yiguo/list/list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/yiguo/cart/cart",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/yiguo/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/yiguo/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "自定义菜单",
+					"pathName": "pages/yiguo/template/sheet/sheet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tab",
+					"pathName": "pages/yiguo/taber/taber",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/yiguo/detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "echarts",
+					"pathName": "package/echarts/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "自定义轮播",
+					"pathName": "package/swiper/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "示例",
+					"pathName": "pages/yiguo/picker-view/picker-view",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加商品",
+					"pathName": "pages/yiguo/goodsCenter/goodsCenter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/yiguo/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地图",
+					"pathName": "pages/yiguo/model/Map/map",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "123购物车",
+					"pathName": "pages/yiguo/model/shop/shop",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "音乐",
+					"pathName": "pages/yiguo/model/musice/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "导航分类",
+					"pathName": "pages/yiguo/model/router/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "选项卡",
+					"pathName": "pages/yiguo/model/tabcard/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ES6",
+					"pathName": "pages/yiguo/model/ES6/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "自定义组件",
+					"pathName": "pages/yiguo/template/sheet/sheet"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,26 @@
+<view>图一</view>
+<!-- 图一 -->
+<view class="banner-swiper">    
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" current='{{swiperIndex}}' circular='{{circular}}' previous-margin="{{previousmargin}}" next-margin="{{nextmargin}}" bindchange="swiperChange" >       
+    <block wx:for="{{Images}}" wx:key="" wx:index="{{index}}">           
+      <swiper-item>            
+        <image src="{{item}}" class="slide-image {{swiperIndex == index ? ' actives' : ''}}" id="{{index}}"></image>          
+      </swiper-item>      
+    </block>     
+  </swiper>  
+</view>
+
+
+<view>图二</view>
+<!-- 图二 -->
+<!-- <view class="banner-swiper">    
+ <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" current='{{swiperIndex}}' circular='{{circular}}' previous-margin="{{previousmargin}}" next-margin="{{nextmargin}}" bindchange="swiperChange" > 
+    <block wx:for="{{Images}}" wx:index="{{index}}" wx:key="">
+        <swiper-item >
+            <image mode="aspectFill" src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : ''}}"/>
+        </swiper-item>
+    </block>
+</swiper>
+</view> -->
+
+

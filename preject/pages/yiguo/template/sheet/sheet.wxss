@@ -1,0 +1,6 @@
+.menu{
+  width: 80%;
+  color:#ffffff;
+  background:#1296db;
+  top: 100rpx;
+}

@@ -1,0 +1,48 @@
+<view class='main'>
+  <view class='tabar'>
+    <view class='online' wx:for="{{tablist}}" wx:key="" data-id="{{item.id}}" catchtap='switchTab'>
+      <text class='{{curModel === item.id ? "cur" : ""}}'>{{item.name}}</text>
+    </view>
+  </view>
+
+  <view >
+    <scroll-view style='height:{{scollHeight}}px' scroll-y>
+      <view style='border:1rpx solid #fff;'>
+        <view class="carts-list" wx:for="{{carts}}" wx:key=''  data-id="{{item.id}}">
+          <view  class="carts-item" data-index="{{index}}" bindtouchstart="touchstart" bindtouchend="touchmove" style="left:{{item.left + 'rpx'}}">
+            <!-- //复选框 -->
+            <view class="carts-radio">
+              <icon wx:if="{{item.selected}}" type="success_circle" size="20" bindtap="bindCheckbox" data-index="{{index}}" />
+              <icon wx:else type="circle" size="20" bindtap="bindCheckbox" data-index="{{index}}" />
+            </view>
+            <!-- //商品信息 -->
+            <view class="carts-cnt" catchtap="goOrderDetail">
+              <view class='img'>
+                <image class="carts-image" src="{{item.image}}" mode="aspectFill" />
+              </view>
+              <view class="carts-info">
+                <view class="carts-title clamp2">{{item.title}}</view>
+                <view class="carts-subtitle">
+                  <text class="carts-price c--f60">￥{{item.price}}</text>
+                </view>
+              </view>
+            </view>
+            <!-- //数量加减 -->
+            <view class="carts-num">
+              <text class="minus {{minusStatuses[index]}}" data-index="{{index}}" data-num="{{item.num}}" bindtap="subtraction">-</text>
+              <input disabled type="number" value="{{item.num}}" />
+              <text class="plus normal" data-index="{{index}}" data-num="{{item.num}}" bindtap="addtion">+</text>
+            </view>
+          </view>
+          <view class='details' data-index="{{index}}" bindtap="bindCartsDel">删除</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class='footer'>
+    <view class='canner'></view>
+    <button hover-class='hover-class' catchtap='scan' class="btn-go-pay" wx:if="{{curModel != 2}}">扫码添加</button>
+    <button catchtap='goCheckout' hover-class='hover-class' class="btn-go-pay btn-go-pay1 {{checkedCartsIds.length > 0 ? 'disabled' : ''}}">提交订单</button>
+  </view>
+</view>

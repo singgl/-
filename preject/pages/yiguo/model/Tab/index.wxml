@@ -1,0 +1,13 @@
+<view class='bacgrout'>
+  <image src="http://img09.yiguoimg.com/e/ad/2016/160825/585749448986042649_800x400.jpg"></image>
+</view>
+<view class='page'>
+  <view class='top'>
+    <view class="person {{index == 0 ? 'active' : ''}}" data-index="0" catchtap="tabsClick">个人</view>
+    <view class="express {{index == 1 ? 'actives' : ''}}" data-index="1" catchtap="tabsClick">企业</view>
+  </view>
+  <view class='tobbom'>
+    <view class="b_person {{index == 0 ? 'visblite' : ''}}">个人</view>
+    <view class="b-express {{index == 1 ? 'visblite' : ''}}">企业</view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<view class='page'>
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" duration="{{duration}}" class="swiper-box" id="top" current="{{swiperCurrent}}">
+    <block wx:for="{{banner_list}}" wx:key="">
+      <swiper-item>
+        <view class='bancer{{index}} banner'>
+          <image class="slide-image" src="{{item}}"/>
+          <view class='slide-btn' wx:if="{{index == count}}" catchtap='tabnav'>开启新特性</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

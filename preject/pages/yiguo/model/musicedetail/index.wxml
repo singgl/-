@@ -1,0 +1,31 @@
+<view class='m_detail {{showDetail ? "is-ok":""}}'>
+  <view class='m_top'>
+    <view class='m_title'>
+      <icon class='iconfont icon-jiantouxia' catchtap="actionSheetbindchange"></icon>
+      <text>{{catchs.title}}</text>
+    </view>
+    <view class='m_name'>{{catchs.author}}</view>
+  </view>
+  <view class='m_conten'>
+    <view class='m_head'>
+      <image src="{{catchs.pic}}"></image>
+    </view>
+    <view class='m_lic'>{{catchs.lrc}}</view>
+  </view>
+  <view class='m_footer'>
+    <view class='m_left'>
+      <icon class='iconfont love {{stan ? "icon-like_fill" : "icon-like"}}' id="{{catchs.songid}}" catchtap='singTap'></icon>
+    </view>
+    <view class='m_center'>
+      <view class='left'>
+        <icon class='iconfont next icon-left-copy' catchtap='lastTap'></icon></view>
+      <view class='cen'>
+        <icon class='iconfont play {{show ? "icon-play-copy" : "icon-stop-copy"}}' catchtap='playTap'></icon></view>
+      <view class='right'>
+        <icon class='iconfont next icon-play_fill' catchtap='nextTap'></icon></view>
+    </view>
+    <view class='m_right'>
+      <icon class='iconfont icon-yinle1' catchtap='menuTap'></icon>
+    </view>
+  </view>
+</view>

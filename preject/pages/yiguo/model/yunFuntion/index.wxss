@@ -1,0 +1,133 @@
+.demo>ul>li{
+  display: block;
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0 40rpx;
+  color: #666;
+}
+input{
+  vertical-align: middle;
+  height: 60rpx;
+  line-height: 60rpx;
+  flex: 1;
+}
+text{
+  display: inline-block;
+  padding: 0 20rpx;
+}
+.goodsList{
+  font-size: 28rpx;
+}
+.goodsTitle{
+  font-size: 30rpx;
+  color: #999;
+  padding: 10rpx;
+}
+.goodsList>.goodsConten>.goodsImg{
+  width: 200rpx;
+  height: 200rpx;
+  background: rgb(25, 174, 194);
+  margin: 10rpx;
+}
+.goodsList>.goodsConten>.goodsImg>image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.goodsList>.goodsConten>.goodsLi>ul>li{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0rpx 10rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.goodsConten>.goodsAdd{
+  width: 200rpx;
+  text-align: center;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: rgba(4, 122, 53, 0.575);
+}
+
+
+.AddList{
+  margin-top: 50rpx;
+}
+.upLoad{
+  width: 200rpx;
+  text-align: center;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: rgba(4, 122, 53, 0.575);
+}
+.AddList>.srclist{
+
+}
+.AddList>.srclist>ul{
+  display: inline-block;
+  margin: 0 15rpx;
+}
+.AddList>.srclist>ul>li{
+  display: inline-block;
+  width: 210rpx;
+  height: 210rpx;
+  margin: 10rpx 15rpx;
+}
+.AddList>.srclist>ul>li>image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.urlList{
+  margin-top: 50rpx;
+}
+.urlCont{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.urlCont>text{
+  line-height: 65rpx;
+}
+
+.menu{
+  margin-top: 50rpx;
+}
+.menu>.menuCont{
+
+}
+.menu>.menuCont>.menuicon{
+  width: 200rpx;
+  height: 200rpx;
+  background: rgb(40, 131, 31);
+  margin: 15rpx;
+}
+.menu>.menuCont>.menuicon>image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu-input{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  background: #fff;
+}
+.menu-input>text{
+  font-size: 28rpx;
+}

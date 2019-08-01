@@ -1,0 +1,16 @@
+<!-- <view class='map'>
+  <map id="map" 
+    longitude="{{longitude}}" 
+    latitude="{{latitude}}" 
+    scale="20" 
+    subkey="BMUBZ-P2CH3-BSC3V-3TLET-LS2J2-77BPA"
+    enable-3D="{{enable3D}}"
+    show-location="{{enable3D}}"
+    >
+    <cover-view class='cover' catchtap='getLocation'>
+      <cover-image class="img" src="../../../../images/tation.png"/>
+    </cover-view>
+  </map>
+</view> -->
+
+<map-route route-info="{{routeInfo}}"></map-route>

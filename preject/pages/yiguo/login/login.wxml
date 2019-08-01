@@ -1,0 +1,3 @@
+ <import src="/template/signin.wxml"/>
+
+<template is="signin" data="{{signinHidden}}"/>

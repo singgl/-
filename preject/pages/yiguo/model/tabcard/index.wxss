@@ -1,0 +1,133 @@
+page{
+  background-color: #fff;
+}
+.tabar{
+  display: flex;
+  border-bottom: 1rpx solid #eee;
+}
+.tabar .online{
+  flex: 1;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #999;
+}
+.tabar .online text{
+  height: 100rpx;
+  line-height: 100rpx;
+  display: block;
+  margin: 0 auto;
+  width: 100rpx;
+}
+.cur{
+  position: relative;
+}
+.cur:after{
+  content: "";
+  position: absolute;
+  width: 90rpx;
+  height: 6rpx;
+  background-color: red;
+  left: 5rpx;
+  bottom: 0rpx;
+}
+
+.carts-list{
+  padding: 0 20rpx;
+  height: 190rpx;
+  position: relative;
+  margin:14rpx 0;
+}
+.carts-list .carts-item{ 
+  box-sizing: border-box; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 20rpx 10rpx; 
+  width: 100%; 
+  height: 190rpx;
+  position: relative;
+  box-shadow:0px 0px 6px 0px rgba(187, 35, 35, 0.08);
+  z-index: 2;
+  transition: left 0.2s ease-in-out;
+  background: #fff;
+}
+.carts-item .carts-cnt{
+  flex: 1; 
+  padding: 0 20rpx;
+}
+.carts-cnt .img{
+  height: 150rpx; 
+  width: 150rpx;
+  float:left; 
+  margin-right: 20rpx; 
+}
+.carts-cnt .carts-image{
+  height: 100%; 
+  width: 100%;
+}
+.carts-cnt .carts-info{display: flex; flex-direction: column; justify-content: space-between; min-height: 150rpx;}
+.carts-cnt .carts-title{font-size: 28rpx;}
+.carts-cnt .carts-subtitle{display: flex; flex-direction: row; font-size: 28rpx;}
+.carts-list .carts-item .carts-del{position: absolute; top: 20rpx; right: 10rpx;}
+/*数量加减*/
+.carts-num{border: 1rpx solid #aaa; border-radius: 5rpx; display: flex; align-items: center; align-self: flex-end; text-align: center; height: 50rpx;}
+.carts-num input{
+  border-left: 1rpx solid #aaa; 
+  border-right: 1rpx solid #aaa; 
+  font-size: 30rpx; 
+  font-family: arial; 
+  height: 50rpx; 
+  line-height: 50rpx; 
+  width: 80rpx;
+}
+.carts-num .minus, .carts-num .plus{color: #000; text-align: center; line-height: 50rpx; width: 40rpx;}
+.carts-num .minus{font-size: 30rpx;}
+.carts-num .minus.disabled{color: #ccc;}
+.carts-num .plus{font-size: 34rpx;}
+.details{
+  position: absolute;
+  right: 20rpx;
+  top: 0;
+  width: 90rpx;
+  height: 190rpx;
+  line-height: 190rpx;
+  color: #fff;
+  font-size: 30rpx;
+  background: #EB4335;
+  z-index: 1;
+  text-align: center;
+}
+
+.footer{
+  position: fixed;
+  border-top: 1rpx solid #eee;
+  box-sizing: border-box;
+  bottom: 0;
+  height: 100rpx;
+  line-height: 100rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.footer .canner{
+  flex: 1;
+}
+.footer .btn-go-pay{
+  padding: 0;
+  margin: 0;
+  font-size: 30rpx;
+  width: 180rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  background: rgb(241, 159, 7);
+  border-radius: 0;
+}
+.footer  .btn-go-pay1{
+  background: rgb(139, 137, 137);
+}
+.footer  .disabled{
+  background-color: hsl(345, 91%, 55%)
+} 

@@ -1,0 +1,36 @@
+<view class='topnav'>
+  <icon class='iconfont icon-tongzhi'></icon>
+  暂无数据
+</view>
+
+<block>
+  <view class='seachernav'>
+    <icon class='iconfont icon-dizhiguanli icon'></icon>
+    <text>hahakljhkjhkjhkjhh </text>
+    <icon class='iconfont icon-enter icon'></icon>
+    <view class='seach' catchtap='seacher'>搜索</view>
+  </view>
+
+  <view class='main'>
+    <scroll-view class='left' scroll-y scroll-top="{{leftScrollTop}}" scroll-with-animation='{{true}}' style='height:{{scrollHeight}}px'>
+      <view class='Items {{curIndex === index ? "cur":""}}' wx:for="{{gouse}}" wx:key="{{index}}" data-index="{{index}}" bindtap='cateChange'>
+        <view class='name'>{{item.name}}</view>
+      </view>
+    </scroll-view>
+
+    <scroll-view class='right' scroll-y scroll-top="{{scrollTop}}" scroll-with-animation='{{true}}' style='height:{{scrollHeight}}px' bindscroll='contentScroll'>
+      <view class='goods-cont' wx:for="{{gouse}}" wx:key='{{item.number}}'>
+        <view class='title' wx:if="{{item.products.length}}">
+          <view class='name'>{{item.name}}</view>
+        </view>
+        <view class='item-cont'>
+          <view class='items' wx:for="{{item.products}}" wx:for-item="item2" wx:key='{{item2.id}}' data-id='{{item2.id}}'>
+            <image src="{{item2.image}}" wx:if="{{item2.image}}" mode='aspectFit' lazy-load="{{lazyLoad}}"></image>
+            <image src="/images/none-img.png" wx:else mode='aspectFit' lazy-load="{{lazyLoad}}"></image>
+            <view class='txt'>{{item2.name}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</block>

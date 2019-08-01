@@ -1,0 +1,29 @@
+.banner-swiper {  width: 100%;  height: 400rpx;  overflow: hidden;}
+swiper {  display: block;  height: 400rpx;  position: relative;}
+.slide-image {  
+  width: 98%;  
+  display: block;  
+  margin: 0 auto;  
+  height: 320rpx;  
+  margin-top:40rpx;
+  border-radius: 10rpx;
+}
+
+.actives{ 
+  margin-top:25rpx;
+  height: 350rpx;
+  max-height: 350rpx;
+  border-radius: 10rpx;
+  transition: max-height all .2s ease-in 0s
+}
+
+/* .active{
+  transform: scale(1.1);
+  transition:all .2s ease-in 0s;
+  align-items: flex-start;
+  overflow:unset;
+  border-radius: 10rpx;
+} */
+  
+
+

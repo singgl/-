@@ -1,0 +1,49 @@
+@import "/template/signin.wxss";
+
+.minebox>.top{
+  height: 150rpx;
+  background: #1296db;
+  display: flex;
+}
+.minebox>.top>image{
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+  border-radius: 50%;
+  background: #fff;
+}
+.minebox>.top>.logo{
+  line-height: 150rpx;
+  font-size: 30rpx;
+  color: #fff;
+  margin: 0 50rpx;
+}
+.minebox>.butList{
+  margin-top: 30rpx;
+  background: #fff;
+}
+.minebox>.butList>ul{
+  font-size: 32rpx;
+  color: #999;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.minebox>.butList>ul>li{
+  display: flex;
+  height: 150rpx;
+  line-height: 150rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #eee;
+  position: relative;
+}
+.tencer{
+  margin-right: 20rpx;
+}
+.concer{
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

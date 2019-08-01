@@ -1,0 +1,30 @@
+@import 'utils/icon.wxss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100%;
+}
+
+page{
+  height: 100%;
+  font-family: "Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+  background: #eee;
+}
+
+.borders{
+  border-left: 0;
+  border-right: 0;
+}
+/* 去除button默认边框 */
+button::after{
+  border: none;
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

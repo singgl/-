@@ -1,0 +1,16 @@
+<template name="signin">
+  <!-- <view class='page' hidden="{{signinHidden}}"> -->
+  <view class='page'>
+    <!-- <modal title="请登录" confirm-text="账号登录" cancel-text="微信登录"  hidden="{{signinHidden}}" bindconfirm="modalconfirm" bindcancel="modalcancel">
+      请选择登录方式
+    </modal> -->
+
+    
+    <view class='bottom'>
+      <button class='wxlogin' open-type='getUserInfo' bindgetuserinfo='modalcancel'>微信登录</button>
+
+      <button class='zhlogin' open-type='getPhoneNumber' bindgetphonenumber="modalconfirm">账号登录</button>
+    </view>
+  </view>
+</template>
+

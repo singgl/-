@@ -1,0 +1,70 @@
+
+
+
+.seacher{
+  height:100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+}
+.seacher>input{
+  border: 1rpx solid #eee;
+  width: 80%;
+  height: 60rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}
+.seacher>.icon{
+  font-size: 50rpx;
+}
+.history{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #666;
+  background: #fff;
+  overflow: hidden;
+}
+.history>.title{
+  padding: 10rpx 20rpx;
+}
+.history>.record>.clear{
+  font-size: 30rpx;
+  width: 100%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  float: left;
+  margin: 20rpx;
+}
+.history>.record>.clear>text{
+  border: 1rpx solid #eee;
+  padding: 20rpx;
+  color: #aaaaaa;
+  border-radius: 10rpx;
+}
+.history>.record>ul{
+  display: block;
+  width: 90%;
+  margin: 30rpx auto 0;
+}
+.history>.record>ul>li{
+  font-size: 26rpx;
+  padding: 0rpx 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+  background: #eee;
+  margin: 0 15rpx 25rpx;
+  float: left;
+}
+.history>.records{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+}

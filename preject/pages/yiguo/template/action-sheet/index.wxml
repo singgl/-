@@ -1,0 +1,8 @@
+<view class="is-ok customer_service_wrap {{showInvoice ? 'is-as-mask' : ''}}" catchtap="actionSheetbindchange"></view>
+<view class="inlne-block {{ showInvoice ? 'i-as-show' : '' }}">
+  <view class='header'>提示信息</view>
+  <view class='footer'>
+    <view class='main'>哈哈哈哈哈</view>
+    <button class='sure' >确认</button>
+  </view>
+</view> 

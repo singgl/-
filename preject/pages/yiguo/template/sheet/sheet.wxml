@@ -1,0 +1,7 @@
+<view>
+  <view>
+    <button class="menu"  bindtap="actionSheetTap">弹出action sheet</button>
+  </view>
+
+  <action-index showInvoice="{{showInvoice}}" bindcloseInvoice="closeInvoice" orderId="{{id}}"></action-index>
+</view>

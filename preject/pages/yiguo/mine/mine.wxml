@@ -1,0 +1,29 @@
+<view class='minebox'>
+  <view class='top'>
+      <image src="{{userInfo.avatarUrl}}"></image>
+      <view class='logo' catchtap='{{userInfo.nickName? "":"logintap"}}'>{{userInfo.nickName ? userInfo.nickName : '立即登录'}}</view>
+  </view>
+
+  <view class='butList'>
+    <ul>
+      <li catchtap="toast">
+        <icon class='iconfont icon-document tencer'></icon>
+        关于我们
+        <icon class='iconfont icon-enter concer'></icon>
+      </li>
+      <li catchtap="notice">
+        <icon class='iconfont icon-document tencer'></icon>
+        联系我们
+        <icon class='iconfont icon-enter concer'></icon>
+      </li>
+    </ul>
+  </view>
+
+  <form bindsubmit="orderMake" report-submit='true' ame='orderMake'>
+    <button form-type="submit">模版推送</button>
+  </form>
+
+  <wxc-toast is-show="{{$toast.show}}" icon="yes" text="分享成功"></wxc-toast>
+
+  <wxc-notice scroll="{{true}}" close="{{true}}" show-icon="{{true}}" bg-color="#fff" color="#333" notice="{{notice}}" bind:close="onClose"></wxc-notice>
+</view>
